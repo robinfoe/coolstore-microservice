@@ -1,10 +1,11 @@
 package com.redhat.coolstore.api_gateway.model;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;;
 
 public class ShoppingCart  {
 
+	public int cartId;
 
     public double cartItemTotal=0.0;
 
@@ -23,6 +24,13 @@ public class ShoppingCart  {
         return ("cart: total: " + cartTotal + " sci list: " + shoppingCartItemList);
     }
 
+    public int getCartId() {
+		return cartId;
+	}
+
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
+	}
 
 	public double getCartItemTotal() {
 		return cartItemTotal;
